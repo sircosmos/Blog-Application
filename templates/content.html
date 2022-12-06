@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This website showcase 4 must-read blog every week"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grandians - Blog Webpage</title>
+    <link rel="stylesheet" href="{% static './assets/style.css' %}" />
+    <link rel="stylesheet" href="./assets/content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container navbar">
+         <h1><a href="{% url 'home' %}">CosmosDB</a></h1>
+
+        <!-- <ul class="navlinks">
+          <li>Home</li>
+          <li>Top</li>
+          <li>Categories</li>
+          <li>About</li>
+        
+        </ul> -->
+
+        <button class="away">
+          <a href="{% url 'content' %}"> Log Out </a>
+        </button>
+
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line1"></div>
+          <div class="line1"></div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="ff_content">
+        <div class="person">
+          <div class="by">
+            <a href="profile.html">
+            <img src="images/avatar.jpg" alt="" />
+            <div class="name">
+              <a href="profile.html">
+              <h4>By: <span>Makinde Sodiq</span></h4>
+              <i>2 mins ago</i>
+              </a>
+            </div>
+            
+          </div>
+
+          <div class="title">
+            <h2>7 killer causes of high blood pressure</h2>
+            <p>Thing you need to learn - What to do</p>
+
+            <img src="{%  static '/images/depression2.jpg' %}" alt="blog" />
+          </div>
+
+          <div class="content_itself">
+            <p class="main_script">
+              Heart illness is one of the main sources of death around the world, and individuals who have strangely high weight in their supply routes are undeniably almost certain than others to pass on rashly of heart illness. 
+Your pipe (arteries) conveys the blood from your heart all through your body. Blood pressure is the proportion of how hard your blood is pushing against within your corridors. Despite being a specific measure of weight is expected to help blood through your body, if that weight is excessively extraordinary, you have hypertension, or high blood pressure. 
+At the point when blood pressure is estimated, there are two numbers for each perusing: for instance, "120 more than 80" is composed as 120/80. This is on the grounds that every heartbeat sends a weight wave through the circulatory system. The higher number (systolic circulatory strain) is the pinnacle of the wave, when your heart gets (the uproarious "pound" when you tune in to your pulse). The lower number (diastolic pulse) is the lower "plunge" or box of the wave, when your heart unwinds. 
+Blood pressure is constantly recorded as the systolic number over the diastolic number, and the numbers show pressure as estimated in millimeters of mercury on the measure (mm Hg). All in all, somebody has hypertension if a few estimations of pulse at the specialist's office show readings of 140 systolic or 90 diastolic or higher. Hypertension is one of the primary danger factors for herart illness, stroke, and kidney disappointment 
+Causes 
+Primary (or fundamental) high blood pressure is the point at which the reason is not known. Most of high blood pressure cases are primary. When there is a basic issue, for example, kidney sickness or hormonal issues that can cause hypertension, it is called secondary high blood pressure. At the point when it is conceivable to address the basic reason, hypertension generally improves and may even get back to business as usual. 
+Different elements that can add to high blood pressure include: 
+•age (pulse typically increments with age) 
+•diet 
+•excessive liquor utilization 
+•lack of activity 
+•obesity 
+•sleep apnea 
+•stress 
+Indications and difficulties 
+Hypertension can sporadically cause cerebral pains, vision issues, tipsiness, or windedness, yet a great many people with hypertension have no side effects. This is the reason hypertension is alluded to as the "quiet executioner." Hypertension is generally found at a standard clinical exam when a specialist or attendant takes a circulatory strain perusing. 
+Treatment
+The administration of hypertension incorporates way of life changes and the utilization of drugs. Appropriate treatment of hypertension can add a long time to an individual's life. Controlling blood pressure with drugs can diminish the danger of stroke and heart illness. 
+Drugs used to bring down circulatory strain incorporate diuretics (e.g., hydrochlorothiazide*), beta-blockers (e.g., atenolol, metoprolol), ACE inhibitors (e.g., ramipril, enalapril, lisinopril), calcium channel blockers (e.g., nifedipine, amlodipine), angiotensin II receptor blockers (e.g., losartan, valsartan), and direct renin inhibitors (e.g., aliskiren). 
+Individuals who have other danger factors, particularly the individuals who have diabetes or have just endured heart harm, might be begun on drugs regardless of whether their blood pressure is underneath "authentic" hypertensive levels. 
+To prevent hypertension and heart illness, here are some sound ways of life tips: 
+•limit your liquor admission to: 
+	no multiple beverages every day (or close to 3 beverages on extraordinary events) to a limit of 10 beverages for each week for ladies 
+	no multiple beverages every day (or close to 4 beverages on uncommon events) to a limit of 15 beverages for each week for men 
+•cut down on your salt utilization (under 2000 mg for each day from all sources) 
+•eat more natural products, vegetables, grains, and fiber 
+•get normal actual action – in any event 150 minutes (2 and a half long stretches) of actual movement every week in meetings of at any rate 10 minutes 
+•lose weight  
+•stop smoking 
+•get more potassium in your eating regimen (converse with your primary care physician first to ensure you are not in danger of hyperkalemia [higher-than-typical potassium levels in your blood]) 
+It is significant for individuals to realize their blood pressure in mm Hg and the significance of keeping it controlled. The proof proposes that even a little expansion in pulse can cause a critical change in future.
+              <p></p>
+            </p>
+
+            <hr>
+
+            <div class="icon">
+              <div class="width_c">
+              <img src="svg/comment-svgrepo-com.svg" onclick="commentbox()">
+              </div>
+              <div class="width_c">
+                <a href="email.html">
+              <img src="svg/share-svgrepo-com.svg" alt="">
+              </a>
+              </div>
+            </div>
+
+            <form action="" class="comment_sec">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <button type="submit">Comment</button>
+            </form>
+
+            <div class="comment">
+              <h2>Comments</h2>
+              <div class="p_person">
+                <img src="images/avatar.jpg" alt="">
+
+                <div class="c_name">
+                  <h3>Victor Jordan</h3>
+                 
+                  <p> As they build their dreams, become successful, and gain notoriety, the public, if they see them </p>
+                  <small>30 minutes ago</small>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <aside>
+        <a href="profile.html">
+       <div class="profile">
+         <img src="images/avatar.jpg" alt="">
+         <h2>Makinde Sodiq</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus qui repellat delectus illum architecto optio libero, possimus, repudiandae natus ullam alias, laudantium ab. Ut voluptate nam quam, nemo facilis quasi.</p>
+       </div>
+       </a>
+       <hr>
+
+       <div class="related">
+         <h3>Related Post</h3>
+         <div class="rt">
+           <img src="images/blog2.jpg" alt="">
+           <h5>Life Hack - How to manage your time as a developer</h5>
+         </div>
+         <div class="rt">
+           <img src="images/blog2.jpg" alt="">
+           <h5>Life Hack - How to manage your time as a developer</h5>
+         </div>
+         <div class="rt">
+           <img src="images/blog2.jpg" alt="">
+           <h5>Life Hack - How to manage your time as a developer</h5>
+         </div>
+       </div>
+      </aside>
+    </main>
+
+
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <h3>Would you like to join our Newsletter</h3>
+          <div class="new_mail">
+            <form action="">
+              <input type="text" placeholder="Email Address" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            sed nobis accusamus corrupti! Tempora aliquid iure, velit beatae
+            ullam optio molestias consequatur, eius placeat vel quod a quaerat
+            quas praesentium?
+          </p>
+          <hr />
+
+          <div class="copyr">
+            <ul class="socials">
+              <li>
+                <a href=""><img src="./svg/github-svgrepo-com.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./svg/facebook-svgrepo-com.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./svg/linkedin-svgrepo-com.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./svg/instagram-svgrepo-com.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./svg/twitter-svgrepo-com.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+
+            <p>&copy; 2022 Makinde All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
